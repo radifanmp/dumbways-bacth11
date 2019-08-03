@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+</head>
+<!-- "text-align:center; position: sticky; background-color: lightgray; margin-top:200px;" -->
+<body style="display: flex; flex-direction: column; justify-content: center; align-items: center; min-height: 90vh; background-color: lightgray;">
+<table border="0" align="center" style="position: sticky;">
+    <form action="#" method="post" name="formjs">
+    <tr>
+        <td><H2 style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; text-align: center;">LOG IN HERE</H2></td> 
+    </tr>
+        
+    <tr>
+        <td><input type="email" id="email" name="email" placeholder="Email" onchange=valid() style="width: 200px; height: 25px; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"></td>
+    </tr>
+
+    <tr>
+        <td><input type="text" id="password" name="password" placeholder="Password" onchange=valid() style="-webkit-text-security: disc; width: 200px; height: 25px; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"></td>
+    </tr>
+
+    <tr>
+        <td><button style="width:205px; background-color:darkslategrey; color:white; border-radius:5px; font-size: 20px; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;" type="submit" id="Button" disabled onclick=Button()>Log In</button></td>
+    </tr>
+</form>
+</table>
+
+<script>
+
+function valid(){
+var email = document.getElementById('email').value;
+var password = document.getElementById('password').value;
+
+        if (email == "" && password == ""){
+            document.getElementById('Button').disabled = true;
+        }
+
+        else{
+            document.getElementById('Button').disabled = false;
+
+        }
+}
+
+function Button(){
+    var email = document.getElementById('email').value;
+    alert('email');
+}
+
+</script>
+
+</body>
+</html>
