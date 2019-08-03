@@ -9,47 +9,48 @@
 <!-- "text-align:center; position: sticky; background-color: lightgray; margin-top:200px;" -->
 <body style="display: flex; flex-direction: column; justify-content: center; align-items: center; min-height: 90vh; background-color: lightgray;">
 <table border="0" align="center" style="position: sticky;">
-    <form action="#" method="post" name="formjs">
+    <form action="#" method="post" >
     <tr>
         <td><H2 style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; text-align: center;">LOG IN HERE</H2></td> 
     </tr>
         
     <tr>
-        <td><input type="email" id="email" name="email" placeholder="Email" onchange=valid() style="width: 200px; height: 25px; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"></td>
+        <td><input type="email" id="email" name="email" placeholder="Email" onchange="valid()" style="width: 200px; height: 25px; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"></td>
     </tr>
 
     <tr>
-        <td><input type="text" id="password" name="password" placeholder="Password" onchange=valid() style="-webkit-text-security: disc; width: 200px; height: 25px; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"></td>
+        <td><input type="password" id="password" name="password" placeholder="Password" onchange="valid()" style="-webkit-text-security: disc; width: 200px; height: 25px; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"></td>
     </tr>
 
     <tr>
-        <td><button style="width:205px; background-color:darkslategrey; color:white; border-radius:5px; font-size: 20px; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;" type="submit" id="Button" disabled onclick=Button()>Log In</button></td>
+        <td><input type="submit" style="width:205px; background-color:darkslategrey; color:white; border-radius:5px; font-size: 20px; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;" id="Button" value="LOG IN" onclick="muncul()" disabled></td>
     </tr>
 </form>
 </table>
 
 <script>
-
 function valid(){
-var email = document.getElementById('email').value;
-var password = document.getElementById('password').value;
+var email = document.getElementById("email").value;
+var password = document.getElementById("password").value;
 
-        if (email == "" && password == ""){
-            document.getElementById('Button').disabled = true;
+        if (email== "" && password== ""){
+            document.getElementById("Button").disabled = true;
         }
 
-        else{
-            document.getElementById('Button').disabled = false;
-
+        else{   
+            document.getElementById("Button").disabled = false;
+            // alert(email);
         }
 }
 
-function Button(){
-    var email = document.getElementById('email').value;
-    alert('email');
-}
+function muncul() {
 
+var email = document.getElementById("email").value;
+alert(email);
+
+}
 </script>
+
 
 </body>
 </html>
