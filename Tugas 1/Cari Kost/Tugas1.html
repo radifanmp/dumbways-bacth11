@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="css/materialize.min.css">
+        <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css"/>
+        <link rel="icon" type="image/png" href="img/icon.png">
+
+        <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+        <script src="js/materialize.min.js"></script>
+        
+    <style>
+    #mapid { height: 525px; width: 640px; 
+    }
+    </style>
+
+
+    <title>Kuy Kost</title>
+
+    <div class="navbar-fixed">
+    <nav style="background-color:#10ac84;">
+            <div class="nav-wrapper">
+                <ul id="nav-mobile" class="left hide-on-med-and-down">
+                    <li><a href="#" style="color:white;">Home</a></li>
+                    <li><a href="#" style="color:white;">Kamar</a></li>
+                    <li><a href="#" style="color:white;">Kapasitas</a></li>
+                    <li><a href="#" style="color:white;">Tentang Kami</a></li>
+                    <li><a href="#" style="color:white;">Kontak kami</a></li>
+                </ul>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="#" style="color:white;">Ganti Password</a></li>
+                    <li><a href="#" style="color:white;">Profil Saya, Nama User</a></li>
+                </ul>
+            </div>
+          </nav>
+        </div>
+</head>
+<body>
+      <div class="container-fluid ">
+            <!-- content -->
+
+    <div class="row"  style="margin-top: 25px;">
+        <div class="col s6" id="list">
+            <div class="row">
+            
+            </div>
+    </div>
+
+                <!-- maps -->
+                <div class="col s6"  style="margin-top: 25px;">
+                    
+                    <div class="col s6" style="position:fixed" >
+                        <!-- <iframe src="https://maps.google.com/maps?q='+40.7143528+','+40.7143528+'&hl=es;z=14&amp;output=embed"
+                        width="640"
+                         height="525" 
+                         frameborder="0" 
+                         style="border:0" 
+                         allowfullscreen>
+                        </iframe> -->
+                        <div id="mapid"></div>
+                    </div>
+                
+                </div>
+            </div>
+                        
+          </div>
+
+
+          <script src="js/data.js"></script>
+
+</body>
+
+
+
+
+
+</html>
